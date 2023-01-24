@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> QUOTER </title>
+  <link type="text/css" rel="stylesheet" href="quoter.css">
+</head>
+<body class="b2">
+<div class="main"id="main"><img src="emote3.jpg" class="image1"id="im1">
+<div class="main1"id="m1"><p class="p1"> INSPIRATIONAL</p></div>
+<div class="submain"id="sub"></div>
+<a href="quote.html"><button class="home"id="home">HOME</button></a>
+<button class="next"id="next">NEXT</button>
+
+</div>
+<script>
+var motivate=['" Strive not to be a success, but rather to be of value. -Albert Einstein"',
+'"Every strike brings me closer to the next home run. -Babe Ruth"',
+'"We become what we think about. -Earl Nightingale"',
+'"The two most important days in your life are the day you are born and the day you find out why. -Mark Twain"',
+ '"The best revenge is massive success. -Frank Sinatra"'];
+
+document.querySelector(".next").addEventListener('click',function(){
+	 var dis=Math.floor(Math.random()*motivate.length);
+	 var ans=motivate[dis];
+document.querySelector('.submain').textContent=ans;});
+</script>
+</body>
+</html>

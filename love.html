@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> QUOTER </title>
+  <link type="text/css" rel="stylesheet" href="quoter.css">
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body bgcolor="white" class="b2">
+<div class="main"id="main"><img src="love1.jpg" class="image1"id="im1">
+<div class="main1"id="m1"><p class="p1"> LOVE QUOTES </p></div>
+<div class="submain"id="sub"></div>
+<a href="quote.html"><button class="home"id="home">HOME</button></a>
+<button class="next" id="next">NEXT</button>
+
+</div>
+ <script>
+var love=['"The water shines only by the sun. And it is you who are my sun."   -Charles de Leusse',
+'"I swear I could not love you more than I do right now, and yet I know I will tomorrow."    -Leo Christopher',
+'"I love you  begins by I  but it ends up by you."  -Charles de Leusse',
+'"There is a madness in loving you, a lack of reason that makes it feel so flawless."  -Leo Christopher',
+'"You are the last thought in my mind before I drift off to sleep and the first thought when I wake up each morning."  -Unknown','LOVE IS PART OF LIFE -Unknown'];
+document.querySelector(".next").addEventListener('click',function(){
+	 var dis=Math.floor(Math.random()*love.length);
+	 var ans=love[dis];
+document.querySelector('.submain').textContent=ans;});
+</script>
+</body>
+</html>

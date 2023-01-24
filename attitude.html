@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> QUOTER </title>
+  <link type="text/css" rel="stylesheet" href="quoter.css">
+</head>
+<body class="b2">
+<div class="main"id="main"><img src="ati.jpeg" class="image1"id="im1">
+<div class="main1"id="m1"><p class="p1"> ATTITUDE </p></div>
+<div class="submain"id="sub"></div>
+<a href="quote.html"><button class="home"id="home">HOME</button></a>
+<button class="next"id="next">NEXT</button>
+
+</div>
+<script>
+var attitude=['"It is good people who make good places. Anna Sewell"',
+'"I truly have enough money to live comfortably and quitely for the rest of my life; if I die next Tuesday"',
+'"Love is the strongest force the world possesses, yet it is the humblest imaginable ….Mahtma Gandhi"',
+'"My attitude is based on how you treat me"',
+'"Don’t be a slave in heaven. Be a ruler of hellfire"'];
+
+document.querySelector(".next").addEventListener('click',function(){
+	 var dis=Math.floor(Math.random()*attitude.length);
+	 var ans=attitude[dis];
+document.querySelector('.submain').textContent=ans;});
+</script>
+</body>
+</html>

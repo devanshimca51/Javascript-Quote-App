@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> QUOTER </title>
+  <link type="text/css" rel="stylesheet" href="quoter.css">
+</head>
+<body class="b2">
+<div class="main"id="main"><img src="frnd.jpg" class="image1"id="im1">
+<div class="main1"id="m1"><p class="p1"> FRIENDS  </p></div>
+<div class="submain"id="sub"></div>
+<a href="quote.html"><button class="home"id="home">HOME</button></a>
+<button class="next"id="next">NEXT</button>
+
+</div>
+<script>
+var frnds=['"Life without friendship is like the sky without sun. - Unknown"',
+'"A Brother may not be a Friend, but a Friend will always be a Brother." - Benjamin Franklin"',
+'"A day spend with friends is always a day well spend." - Unknown"',
+'"In a friend you find a second self." - Unknown"','"Friends are Happiness of life - Devanshi Bhatt"',
+'"Friends are the family that you choose." - Jess C Scott"'];
+
+document.querySelector(".next").addEventListener('click',function(){
+	 var dis=Math.floor(Math.random()*frnds.length);
+	 var ans=frnds[dis];
+document.querySelector('.submain').textContent=ans;});
+</script>
+</body>
+</html>
